@@ -1,9 +1,7 @@
 #pragma once
 
+#include "hzpch.h"
 #include "Hazel/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Hazel {
 
@@ -79,11 +77,6 @@ namespace Hazel {
 		Event& m_Event;
 	};
 
-	// 重载<<符号，要调用 HZ_TRACE(e.ToString()) ，format_as则调用 HZ_TRACE(e) 
-	//inline std::ostream& operator<<(std::ostream& os, const Event& e)
-	//{
-	//	return os << e.ToString();
-	//}
 	inline std::string format_as(const Event& e)
 	{
 		return e.ToString();
