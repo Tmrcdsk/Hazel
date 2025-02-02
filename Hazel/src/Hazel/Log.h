@@ -19,7 +19,7 @@ namespace Hazel {
 	};
 
 }
-// __VA_ARGS__: 传递宏的不定数量的参数到实际函数里
+// __VA_ARGS__: Pass variable number of arguments from a macro to the actual function
 // Core log macros
 #define HZ_CORE_TRACE(...)	::Hazel::Log::GetCoreLogger()->trace(__VA_ARGS__)
 #define HZ_CORE_INFO(...)	::Hazel::Log::GetCoreLogger()->info(__VA_ARGS__)
